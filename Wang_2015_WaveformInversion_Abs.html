@@ -1,0 +1,49 @@
+<html>
+<head> 
+ <title>Waveform inversion based on wavefield decomposition</title>  
+<meta name="citation_title"  content="Waveform inversion based on wavefield decomposition">
+<meta name="citation_author" content="Fang Wang">
+<meta name="citation_publication_date" content="2015">
+<meta name="citation_dissertation_institution" content="MINES ParisTech">
+<meta name="citation_pdf_url" content="httpwww/Wang_2015_WaveformInversion_many_citesResolution.pdf">
+</head> 
+
+<body>
+<H1>Waveform inversion based on wavefield decomposition</H1>
+<H2>Abstract</H2>
+
+<p> The knowledge of the Earth subsurface poses economic, environmental, human and sci-
+entiic issues. Seismic imaging is a procedure to image the Earth subsurface from the
+data observed at the surface. In the context of hydrocarbon exploration, seismic imaging
+techniques are widely used to characterise the irst few kilometres of the Earth¡¯s interior.
+Full Waveform Inversion (FWI) is one of the eicient seismic imaging method. Recent ad-
+vances in high performance computer make FWI feasible for large applications. In theory,
+FWI could reconstruct a high-resolution subsurface image provided that low frequency
+and wide angle/aperture/azimuth data are available. FWI is a data-itting procedure and
+is resolved as an optimization problem. Depending on the frequency content of the data,
+the objective function of FWI may be highly nonlinear and has many local minima. If a
+data set mainly contains relections, this problem particularly prevents the gradient-based
+methods from recovering the long wavelengths of the velocity model.</p>
+<p> The model of the subsurface could be separated into two parts by scale separation.
+One part is the short-wavelength part which contains the singularities of the model and
+the other part is the long-wavelength part which is a smooth version of the model. In
+this thesis, I propose a variant of FWI based on the scale separation of these two parts to
+mitigate the nonlinearity of the problem.</p>
+<p> In the irst section, methodologies of the conventional FWI and the new proposed
+method are presented. The new method is a Relection-based Waveform Inversion (RWI)
+method . It consists of decomposing the gradient of FWI into a short-wavelength part and
+a long-wavelength part and the inversion is performed in an alternating fashion between
+these two parts. The gradient decomposition is achieved by decomposing the waveields
+into their one-way components. Diferent waveield decomposition methods are also pre-
+sented.</p>
+<p> In the second section, we implement the FWI and the new method to several case
+studies. For numerical modeling, we use a inite-diference approach to resolve the acoustic
+wave equation with constant density in the time domain. The model update is based on
+the L-bfgs algorithm and the waveield is decomposed using the 2D FFT-based method in
+the ?-? domain. These case studies show the diiculties associated with FWI to recover
+the long-wavelength part of the velocity model when low frequency and large-ofset data
+are absent, and the initial model is far from the true one. The new method shows its
+robustness in this case especially for constructing the long-wavelength model. </p>
+</body>
+</html>
+

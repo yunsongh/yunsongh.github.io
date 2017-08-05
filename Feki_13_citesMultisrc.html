@@ -1,0 +1,80 @@
+<html>
+<head> 
+ <title>Towards Automatic Performance Tuning of OpenACC Accelerated Scientific Applications</title>
+<meta name="citation_title" content="Towards Automatic Performance Tuning of OpenACC Accelerated Scientific Applications">
+<meta name="citation_author" content="Feki, Saber">
+<meta name="citation_author" content="Siddiqui, Shahzeb">
+<meta name="citation_conference_title" content="GPU Technology Conference">
+<meta name="citation_firstpage" content="P3259">
+<meta name="citation_publication_date" content="2013/03/19">
+
+<meta name="citation_pdf_url" content="http://on-demand.gputechconf.com/gtc/2013/poster/pdf/P0259_Feki.pdf">
+</head>
+
+<body>
+<h1>Towards Automatic Performance Tuning of OpenACC Accelerated Scientific Applications</h1>
+<H2>Abstract</H2>
+OpenACC was announced in Supercomputing 2011 as a new standard for parallel programming targeting hardware
+accelerators [1]. Although the goal of the standard is to increase programmer productivity by using compiler directives,
+getting the best performance of the target device is still tedious and requires performance tuning.
+We propose a new methodology for empirical tuning of OpenACC accelerated scientific applications at runtime to relieve
+this burden from the end user. This strategy is already proven to work well on MPI communication operations in the Abstract
+Data and Communication Library [2] (ADCL). Indeed we are planning to partially use the framework of ADCL. We present
+the benefits of tuning OpenACC pragmas and clauses in an accelerated seismic imaging kernel. The application is compiled
+with the PGI compiler and runs on the NVIDIA K20c GPU. The performance results obtained are encouraging for future
+development of this methodology and its application to a larger spectrum of scientific applications. 
+
+<H2>Application: Seismic Imaging</H2>
+<p>We used in our experiments the isotropic finite difference kernel which constitutes the building block
+for the Reverse Time Migration (RTM) application and Full Waveform Inversion (FWI), extensively
+used by the oil and gas exploration industry for velocity model building and seismic imaging of the
+sub-surface. The Reverse Time Migration application uses forward modeling and backward
+migration using a finite difference kernel that solves the acoustic wave equation.</p>
+
+<p>where c is the velocity of the propagated wave and P is the wavefield pressure.
+The 3D finite difference stencil scheme is 8th order in space and 2nd order in time. We plan in the
+future to extend this study to different orders in space to explore the impact of computation intensity
+on the parameter choices of the auto-tuner. </p>
+
+<H2>Performance Results</H2>
+We present here the performance results of manually applying the suggested tuning methodology on the RTM isotropic modeling kernel. As shown
+in Figure 3, the tuning procedure that we suggest, when applied to different 3D domain sizes, leads in many cases to a significant performance
+improvement (up to 30%) against the input code with the default compiler optimizations. By default, the compiler implicitly uses gang and vector
+clauses with heuristically determined parameter values. This proves that by tuning OpenACC kernels, we can achieve good performance
+improvement while still programming at a higher level of abstraction. Moreover, the placement of the gang and vector clauses within the nested
+loops (distinguished by different colors in figure 1 and table 1) as well as the grid and block sizes leading to the best performance vary for different
+domain sizes. This reinforces our tendency towards runtime performance tuning, especially when the problem size for instance is a runtime
+parameter, undefined at compile time.
+
+<H2>Conclusion</H2>
+Although inserting OpenACC annotations is intended to be more
+productive than writing native CUDA, the best possible OpenACC
+performance can not be obtained unless the developer goes through
+a tedious tuning exercise. We suggested a new framework to
+perform runtime performance tuning automatically for OpenACC
+accelerated applications. The performance results obtained by hand
+tuning a finite difference kernel justify future development of this
+methodology and its application to a larger spectrum of scientific
+applications.
+
+<H2>Future Work</H2>
+<ul>
+<li>Explore different computational intensities by increasing,
+decreasing the order in space of the finite difference kernel and
+considering the 2D case.</li>
+<li> Implement the auto tuning engine and test it with a variety of
+scientific applications, and different generations of GPUs.</li>
+</ul>
+
+<H2>References</H2>
+[1] OpenACC standard www.openacc-standard.org/ <br>
+[2] Saber Feki, Edgar Gabriel. A Historic Knowledge Based Approach for
+Dynamic Optimization , in proceedings of the International Conference on
+Parallel Computing, 2009, P. 389 - 396 <br>
+[3] Yunsong Huang, Gerard T. Schuster. Multisource least-squares
+migration of marine streamer and land data with frequency-division
+encoding, Geophysical Prospecting, 2012, Vol. 60, P. 663 - 680.
+
+</body>
+</html>
+

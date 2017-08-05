@@ -1,0 +1,48 @@
+<html>
+<head> 
+ <title>Speed-up and regularization techniques for seismic full waveform inversion</title>  
+<meta name="citation_title"  content="Speed-up and regularization techniques for seismic full waveform inversion">
+<meta name="citation_author" content="Clara CASTELLANOS LOPEZ">
+<meta name="citation_publication_date" content="2014">
+<meta name="citation_dissertation_institution" content="Universite de Nice-Sophia Antipolis">
+<meta name="citation_pdf_url" content="httpwww/Castellanos_2014_citesDai13_Multisrc_Xtalk.pdf">
+</head> 
+
+<body>
+<H1>Speed-up and regularization techniques for seismic full waveform inversion</H1>
+<H2>Abstract</H2>
+
+<p>Seismic imaging methods allow to reconstruct the earth¡¯s subsurface parameters based on partial mea-
+surements of elastic waves at, or near, the surface. Full waveform inversion (FWI) is a numerical
+optimization problem that uses the whole waveform information of all arrivals to update the subsur-
+face parameters that govern seismic wave propagation. FWI has shown to provide high quality images
+and now constitutes a production imaging tool in reservoir exploration. However, FWI still faces many
+challenges, specially in the topics of the image resolution, computational cost and non-linear optimiza-
+tion. This thesis concerns some aspects to reduce the computational cost and the use of regularization
+techniques in the optimization problem. </p>
+<p>Currently, the main limitation to perform 3D elastic full waveform inversion on a production level
+is the computational cost it represents. With this in mind, we provide two contributions. First, we
+develop a self adjoint formulation of the isotropic first order velocity-stress elastic equations that allow
+to implement only one forward modeling operator in the gradient computation. Second, solving the
+forward problem is the most computationally expensive part of FWI, and its cost is proportional to
+the number of sources (> 10 3 in 3D). To gain efficiency, instead of solving the wave equation for each
+source, it is possible to solve the wave equation for a linear combination of the sources. This is known as
+source encoding, and has been widely used when combined with steepest descent or conjugate gradient
+algorithms in the optimization process. With the purpose of reducing even more the computational
+cost, we combine Newton and quasi-Newton optimization methods with source encoding techniques.
+We implement this in a 2D frequency domain acoustic modeling engine based on frequency, but the
+results are easily extendible to the 3D frequency scenario. Our synthetic numerical tests were carried
+out in the BP-2004 salt model which is a realistic configuration inspired by the Gulf of Mexico, and
+the real data we used is an ocean bottom cable dataset recorded from the Valhall field in the North
+Sea. We find that the lowest computational cost needed to attain a predefined misfit value is provided
+by l-BFGS, with periodic restarts. However, with noisy data, the most accurate and robust direction
+of descent is provided by Newton methods, with and without source encoding. </p>
+<p>The optimization process requires regularization constraints because the model is not entirely con-
+strained by the data, and more than one model may fit the observed data equally well. We see that
+the total variation of the model as a regularization term provides and adequate description of earth
+models. To improve the quality of the images of the earth parameters, we propose a local total vari-
+ation denoising algorithm based on the incorporation of the information provided by a migrated image.</p>
+
+</body>
+</html>
+

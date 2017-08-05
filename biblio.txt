@@ -1,0 +1,145 @@
+﻿* Multisource least-squares migration of marine streamer and land data with frequency-division
+
+Castellanos, C., 
+Speed-up and regularization techniques for seismic full waveform inversion,
+(2014) UNIVERSITE DE NICE-SOPHIA ANTIPOLIS
+   {also cites Dai, 2013, LSRTM; Schuster, 2011, Xtalk}
+
+Feki, S., Siddiqui, S.
+Towards Automatic Performance Tuning of OpenACC Accelerated Scientific Applications
+(2013 March) GPU Technology Conference, San Jose, California, USA.
+
+  Huang, J., Sun, Y., Li, Z., Cao, X., Li, C.
+  Least-squares split-step migration based on frequency-division encoding
+ (2014) Shiyou Diqiu Wuli Kantan/Oil Geophysical Prospecting, 49 (4), pp. 702-707. 
+
+  Li, Q., Huang, J., Li, Z., Li, N., Li, C.
+  Optimized multi-source least-squares reverse time migration
+ (2016) Shiyou Diqiu Wuli Kantan/Oil Geophysical Prospecting, 51 (2), pp. 334-341. 
+
+Wang, K., Lazaratos, S.  
+Multi-parameter inversion through offset dependent elastic FWI, 
+(2014) US Patent US9702993 B2.
+
+Bansal, R., Baumstein, A., Routh, P.S., 
+Full-wavefield inversion of primaries and multiples in marine environment, 
+(2017) US Patent US9702998 B2
+
+SONI, A. K., 
+Full Wavefield Migration of Vertical Seismic Profiling data, 
+(2014) Indian Institute of Technology Roorkee, India
+
+Zhang, H., Liu, Q., Hao, J.
+Least-squares reverse-time migration toward "true" reflectivity
+(2017) Journal of Seismic Exploration, 26 (2), pp. 183-198. 
+
+
+===============================================
+* Theory of multisource crosstalk reduction by phase-encoded statics
+
+
+Dai, W., Jiao, K., Coles, D., Coates, R.T.
+Least-squares reverse-time migration with statistical sampling
+(2014) 76th European Association of Geoscientists and Engineers Conference and Exhibition, Amsterdam; Netherlands; June 2014
+
+Fedrizzi, E.
+High frequency analysis of imaging with noise blending
+(2014) Discrete and Continuous Dynamical Systems - Series B, 19(4) pp.979-998.
+
+Huang, J., Cao, X., Li, Z., Sun, Y., Li, C., Gao, G.
+Least square reverse time migration in high resolution imaging of near surface
+(2014) Oil Geophysical Prospecting, 49(1), 2014, Pages 107-112
+
+Huang, J., Xue, Z., Bu, C. Li, Z., Wang, C., Gao, G., Cao, X., Li, G.
+The study of least-squares migration method based on split-step DSR,
+(2014) Journal of Jilin University (Earth Science Edition), 44(1), 369-374
+
+Jeong, W., Pyun, S., Min, D.J.
+Crosstalk Reduction in L1-norm-based Simultaneous-source Full Waveform Inversion
+(2013) 75th EAGE Conference & Exhibition, incorporating SPE EUROPEC 2013, London, UK, June 2013
+
+Jun, H., Jin, H., Shin, C.
+Application of efficient frequency-domain full waveform inversion using time-domain encoded simultaneous sources
+(2017) Journal of Seismic Exploration 26(2),  pp.141-169.
+
+Li, C., Huang, J.P., Li, Z.C., Li, Q.Y., Yang, Y. 
+Application of plane-wave least square migration in fault block reservoirs - A case study
+(2014) 76th EAGE Conference & Exhibition,  Amsterdam; Netherlands; June 2014
+
+SUN Si-yu; LI Zhen-chun; ZHANG Kai; YANG Guo-quan, 
+Plane-wave full waveform inversion in time-domain,
+(2015) Progress in Geophysics, 30(5): 2219-2224, doi: 10.6038/pg20150531
+
+Zhan, G., Dai, W., Boonyasiriwat, C., Schuster, G.T.
+Acoustic multi-source full waveform inversion with deblurring
+(2013) Journal of Seismic Exploration, 22(5), pp.477-488.
+
+Zheng, Y., 
+Wave-equation based velocity inversion and migration of multiples,
+(2016) The University of Chinese Academy of Sciences
+
+===============================================
+* Multisource full waveform inversion of marine streamer data with frequency selection. 2013 EAGE 
+
+Wang, Y., Zheng, Y., Chang, X., Yao, Z.
+Full Waveform Inversion Using Free-Surface Related Multiples as Natural Blended Sources,
+(2014) Proceedings of the 76th EAGE Conference and Exhibition, Amsterdam.
+
+===============================================
+* Resolution limits for wave equation imaging
+
+Wang, F., 
+Waveform inversion based on waveﬁeld decomposition,
+(2015) Ecole Nationale Sup´erieure des Mines de Paris.
+===============================================
+* Non-local means filter for trim statics
+
+Guo, B., Schuster, G.T.
+Wave-equation migration velocity analysis using plane-wave common-image gathers
+(2017) GEOPHYSICS, VOL. 82, NO. 5; P. S327--S340,  doi:10.1190/GEO2016-0653.1  
+  {also cites 3D plane-wave least-squares Kirchhoff migration, SEG 2014}
+
+===============================================
+* Theory and feasibility tests for a seismic scanning tunnelling macroscope, GJI
+
+Bazargani, F.
+OPTIMAL WAVE FOCUSING FOR SEISMIC SOURCE IMAGING
+(2014) Colorado School of Mines.
+
+----------------------
+	* Seismic scanning tunneling macroscope - Theory, 74th EAGE, 2012
+
+	Hanafy, S.M., Schuster, G.T.  
+	Seismic scanning tunneling macroscope - Elastic simulations and Arizona mine test
+	(2012) 74th European Association of Geoscientists and Engineers Conference and Exhibition 2012 Incorporating SPE EUROPEC; 
+	Copenhagen; Denmark; 4 June 2012 through 7 June 2012
+
+===============================================	
+ *  Benefits and limitations of imaging multiples:  Interferometric ...& Mirror,  TLE
+
+Kazuya Shiraishi and Gou Fujie and Takeshi Sato and Susumu Abe and Eiichi Asakawa and Shuichi Kodaira
+Interferometric OBS imaging for wide-angle seismic data,
+(2017) GEOPHYSICS, 82(5), Q39-Q51,  doi: 10.1190/geo2016-0482.1
+	
+===============================================
+* Study on the crystal and electronic structure of Y1-xPrxBa2Cu3O7-y ceramics
+
+Adzam, M.I., Yusof, M.I.M. and Yahya A.K. 
+Oxygen sensing behaviors of Eu1-xPrxBa2Cu3O7-$\delta$ ceramic rods with hot-spot,
+(2015) JP Journal of Heat and Mass Transfer
+
+Ivanov, O. N.
+Ferroelastic properties and structural instability of hightemperature metal-oxide superconductors
+(2002) Voronezh State Technical University
+
+Singhal, R.K. 
+A comparative study of Pr substitution at Y and Ba sites in YBa2Cu3O7-δ
+(2011) Materials Letters 65, 825–827.
+
+===============================================
+* Study on the Pr-doped and Ce-doped YBa2Cu3Oy system by XPS and Raman spectrum
+
+Mozaffari, S., Akhavan, M.
+Raman Study of Tb-doped YBCO and Ce-doped GdBCO
+(2008) Physica C: Superconductivity and its Applications.  Volume 468, Issue 13, 1 July 2008, Pages 985-990
+  
