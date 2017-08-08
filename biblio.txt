@@ -1,4 +1,9 @@
-﻿* Multisource least-squares migration of marine streamer and land data with frequency-division
+﻿
+https://yunsongh.github.io
+ replaces
+httpwww
+================
+* Multisource least-squares migration of marine streamer and land data with frequency-division
 
 Castellanos, C., 
 Speed-up and regularization techniques for seismic full waveform inversion,
